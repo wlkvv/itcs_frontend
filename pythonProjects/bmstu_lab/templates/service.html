@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Информация об услуге {{ data.service.title }}{% endblock %}
+
+{% block content %}
+<div class="card service_card">
+    <div class="card-body">
+      {% if data.service.image %}
+      <img src="{{ data.service.image }}" class="img_card" alt="Картинка" >
+      {% endif %}
+      <h5 class="service_text">{{ data.service.title }}</h5>
+      <p class="money" style="color: black;">от {{ data.service.price }}₽<p>
+
+      <p></p>
+      <div class="card-text"> Срок выполнения: {{ data.service.time }}</div>
+      {% if data.service.image %}
+      <div class="card-text"> Срок поддержки: {{ data.service.due_date }}</div>
+      {% endif %}
+      <p></p>
+      <div>
+        <button type="button" class="btn_apply service_apply">Заказать</button>
+      </div>
+      <p></p>
+      <div>
+        <button type="button" class="btn_back service_apply" onclick="window.location.href = '/'">Назад</button>
+      </div>
+      
+    </div>
+  </div>
+  <p class = "card-text service_card-text column">{{data.service.info}}</p>
+  <p class = "card-text service_card-text"><strong>Услуга включает в себя:</strong></p>
+  {% for i in data.service.includes %}
+    <p class = "card-text service_card-text"> — {{i}}</p>
+        {% endfor %}
+{% endblock %} 
