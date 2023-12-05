@@ -1,0 +1,189 @@
+.order-text {
+    font-size: 50px;
+  }
+
+
+.base{
+  background-color: rgb(243, 242, 242);
+  position: inherit;
+}
+
+.banner {
+  width: 100vw; 
+  display: flex;
+  position: relative;
+  top: -20px;
+  left: -20px; 
+  align-items: center;
+  margin-top: 0;
+  background-color: rgb(71,74,81);
+  color: #ffffff;
+}
+.search{
+  background-color: rgb(231, 230, 230);
+  height: 70px;
+  position: relative; 
+  top: -40px;
+  left: -20px;
+  width: 100vw; 
+}
+
+.line_s{
+  margin-left: 30%;
+}
+
+.btn_search {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  height: 40px;
+  border-radius: 20%;
+  border: none;
+}
+
+.logo {
+  text-align: left;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  margin-left: 0px;
+  margin-top: 17px;
+  width: 400px; 
+  height: 35px;
+}
+
+.btn_apply {
+  background-color: rgb(62,180,137);
+  color: #ffffff;
+  height: 37px;
+  border-radius: 10px;
+  border: none;
+  width: 120px;
+}
+
+.btn_delete {
+  background-color: indianred;
+  color: #ffffff;
+  height: 37px;
+  border-radius: 10px;
+  border: none;
+  width: 120px;
+  cursor: pointer;
+}
+
+.btn_back {
+  background-color: rgb(228,113,122);
+  color: #ffffff;
+  height: 37px;
+  border-radius: 10px;
+  border: none;
+  width: 120px;
+}
+
+.card {
+  width: 60%;
+  background-color: rgb(246, 246, 246);
+  margin-bottom: 20px;
+  margin-left: auto;
+  position: relative;
+  margin-right: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+.card-body {
+  padding: 1rem;
+}
+
+.service_card{
+  width: 80%;
+}
+.card-link {
+  color: #2aa458;
+  font-size: 1.8em;
+  text-decoration: none;
+}
+
+.card-text {
+  font-size: 1.2em;
+  color: black;
+}
+
+.service_card-text{
+  padding-left: 126px;
+  padding-right: 126px;
+  text-align: justify;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.img_card{
+  width: 150px;
+  height: 150px;
+}
+
+.btn_apply {
+  background-color: #3EB489;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn_apply:hover {
+  background-color: #2aa458;
+}
+
+.btn_apply:focus {
+  outline: none;
+}
+
+.btn_back {
+  background-color: #E4717A;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn_back:hover {
+  background-color: #E4717A;
+}
+
+.btn_back:focus {
+  outline: none;
+}
+
+/* Дополнительные стили для SVG-иконки */
+.icon {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.service_text {
+  margin: 0;
+  font-size: xx-large;
+}
+
+.money{
+  font-size: 1.8em;
+  margin-top: 10px;
+}
+.service_apply{
+  width: 300px;
+}
+
+.money-ex {
+  margin-top: -25px;
+}
+

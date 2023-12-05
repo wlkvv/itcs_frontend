@@ -1,0 +1,21 @@
+{% load static %}
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/examp.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body class = "base">
+    <h2>
+        <span class="banner">
+          <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Логотип" style="width: 100px; height: 50px;">
+          </div>
+
+          
+        </span>
+      </h2>
+    {% block content %}{% endblock %}
+</body>
+</html>
