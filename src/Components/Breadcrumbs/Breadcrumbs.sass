@@ -1,0 +1,36 @@
+@import "src/Styles/variables.sass"
+
+.breadcrumbs-wrapper
+	margin-bottom: 50px
+	display: flex
+
+	.breadcrumbs
+		border-radius: 15px
+		box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2)
+		width: fit-content
+		background: #fff
+		padding: 10px 24px
+		display: flex
+
+		.crumb
+			display: flex
+			align-items: center
+
+			&:last-child:after
+				display: none
+
+			.home-icon
+				color: $primary
+				margin-right: 10px
+				font-size: 20px
+
+			.chevron-icon
+				color: $primary
+
+			a
+				font-size: 20px
+				text-decoration: none
+				display: flex
+				align-items: center
+				color: $primary
+				padding: 0 10px

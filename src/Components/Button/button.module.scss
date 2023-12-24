@@ -1,0 +1,15 @@
+@import "src/Styles/variables.sass";
+
+.button {
+  border: 1px solid $primary;
+  //   width: 100px;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: all 0.1s linear;
+
+  &:hover {
+    background-color: #000000;
+    color: #fff;
+  }
+}
