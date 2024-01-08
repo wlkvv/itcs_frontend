@@ -1,0 +1,61 @@
+@import "/home/student/labs_4/lab_6/src/Styles/variables.sass";
+
+.cart {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    &_title {
+      font-weight: 800;
+      font-size: 30px;
+    }
+    &_clear {
+      color: grey;
+
+      &:hover {
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__content {
+  }
+
+  &__actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    &_back {
+      border-radius: 30px;
+      &:hover {
+        background-color: $brand-color;
+      }
+    }
+    &_send {
+      border-radius: 30px;
+      background-color: $brand-color;
+      color: #fff;
+      &:hover {
+        background-color: #000000;
+      }
+    }
+  }
+}
+
+.link {
+  color: #000; /* Сохраняет цвет текста родительского элемента */
+  text-decoration: none; /* Убирает подчеркивание */
+  cursor: pointer; /* Делает курсор указателем при наведении */
+}
+
+.link:hover {
+  text-decoration: underline; /* Подчеркивает текст при наведении */
+}

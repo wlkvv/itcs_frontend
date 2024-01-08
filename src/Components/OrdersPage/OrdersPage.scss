@@ -1,0 +1,102 @@
+.content {
+  width: 950px;
+  max-height: 500px;
+  overflow-y: scroll;
+  margin: 20px auto; /* Центрируем контент и добавляем верхний и нижний отступы */
+}
+
+table {
+  width: 100%; /* Используем всю доступную ширину */
+  height: auto; /* Высота по содержимому */
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  background-color: #ffffff8f;
+  color: #000000;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: #1b676777;
+}
+
+tbody td {
+  position: relative;
+}
+
+.actionButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.actionIcon {
+  font-size: 15px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.inputContainer, .statusButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputContainer .input, 
+.statusButtonsContainer .statusButtons {
+  width: auto;
+}
+
+.statusButtons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.statusButton {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:hover {
+    background-color: #eaeaea;
+    border-color: #ccc;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+}
+
+.statusButton.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.date {
+  /* По желанию добавьте специфичные стили для календаря */
+}

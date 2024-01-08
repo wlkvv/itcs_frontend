@@ -1,0 +1,48 @@
+@import "src/Styles/variables.sass"
+
+.breadcrumbs-wrapper
+    margin-bottom: 50px
+    display: flex
+    justify-content: space-between // Расположение элементов с промежутком
+
+.breadcrumbs
+    border-radius: 15px
+    box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2)
+    width: fit-content
+    background: #fff
+    padding: 10px 24px
+    display: flex
+
+.cart-button
+    display: flex
+    align-items: center
+    background: $primary
+    color: white
+    padding: 10px 15px
+    border-radius: 15px
+    text-decoration: none
+    font-size: 20px
+    box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2)
+
+.crumb
+    display: flex
+    align-items: center
+
+    &:last-child:after
+        display: none
+
+    .home-icon
+        color: $primary
+        margin-right: 10px
+        font-size: 20px
+
+    .chevron-icon
+        color: $primary
+
+    a
+        font-size: 20px
+        text-decoration: none
+        display: flex
+        align-items: center
+        color: $primary
+        padding: 0 10px

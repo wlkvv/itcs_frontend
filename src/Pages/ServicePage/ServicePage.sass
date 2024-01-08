@@ -1,0 +1,61 @@
+@import "src/Styles/variables.sass"
+
+.page-details-wrapper
+	display: flex
+	width: 100%
+	background: #fff
+	border-radius: 15px
+	padding: 20px 20px 100px 20px
+	gap: 30px
+	position: relative
+	box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2)
+
+	.return-link
+		position: absolute
+		right: 30px
+		bottom: 20px
+		font-size: 18px
+		text-decoration: none
+		color: #000000
+		transition: all .3s ease
+
+		&:hover
+			color: $primary
+
+	.left
+		width: 300px
+
+		img
+			width: 300px
+			height: 250px
+			border-radius: 15px
+
+	.right
+		flex: 1
+
+		.info-container
+			display: flex
+			flex-direction: column
+
+			.name
+				font-size: 24px
+	button
+		background: #2a2f3b
+		outline: none
+		border: none
+		color: #fff
+		font-size: 14px
+		padding: 10px
+		width: 140px
+		display: flex
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		border-radius: 15px
+		transition: 0.3s ease
+
+		&:hover
+			transform: scale(1.05)
+
+		svg
+			margin-left: 10px

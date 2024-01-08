@@ -1,0 +1,84 @@
+@import "../../Styles/variables.sass"
+
+.login-wrapper
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+
+	.auth-container
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 25px
+		background: $secondary
+		border-radius: 20px
+
+		.header
+			display: flex
+			flex-direction: column
+			align-items: center
+
+			.text
+				color: #fff
+				font-size: 28px
+				font-weight: 700
+
+		.inputs
+			display: flex
+			flex-direction: column
+			margin-top: 15px
+			gap: 25px
+
+			.input
+				display: flex
+				align-items: center
+				width: 280px
+				background: #eaeaea
+				border-radius: 6px
+				position: relative
+
+				input
+					padding: 10px 10px 10px 55px
+					width: 100%
+					background: transparent
+					border: none
+					outline: none
+					color: #797979
+					font-size: 18px
+
+
+				svg
+					position: absolute
+					font-size: 22px
+					color: #797979
+
+				.icon
+					left: 15px
+
+				.show-password-btn-wrapper
+					position: absolute
+					right: 35px
+					cursor: pointer
+					height: 100%
+					display: flex
+					align-items: center
+					user-select: none
+
+
+			.sign-in-link-container, .sign-up-link-container
+				width: 100%
+				display: flex
+				justify-content: center
+
+				span
+					font-size: 16px
+					color: #fff
+					transition: 0.3s ease
+
+					&:hover
+						color: $primary
+
+
+
+

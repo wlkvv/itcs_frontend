@@ -1,0 +1,41 @@
+.hamburger-wrapper
+	width: 60px
+	height: 60px
+	margin: 8px
+	cursor: pointer
+	display: none
+	justify-content: center
+	align-items: center
+	position: relative
+
+	@media screen and (max-width: 1024px)
+		display: flex
+
+	&.open
+		.line-1
+			transform: translate(-50%, -50%) rotate(-45deg)
+
+		.line-2
+			width: 0
+
+		.line-3
+			transform: translate(-50%, -50%) rotate(45deg)
+
+	span
+		background: #ffffff
+		width: 80%
+		height: 3px
+		border-radius: 5px
+		display: block
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		transition: all 0.5s
+
+		&.line-1
+			transform: translate(-50%, -15px)
+
+		&.line-3
+			transform: translate(-50%, 13.5px)
+

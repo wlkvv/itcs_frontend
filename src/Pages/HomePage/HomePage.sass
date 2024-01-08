@@ -1,0 +1,78 @@
+.home-page-wrapper
+	width: 100%
+	height: calc(100vh - 90px - 160px - 60px)
+	display: flex
+	justify-content: space-between
+	overflow: hidden
+	padding-right: 350px
+
+	@media screen and (max-width: 1710px)
+		padding-right: 50px
+
+	@media screen and (max-width: 1560px)
+		padding-right: 100px
+
+	@media screen and (max-width: 1480px)
+		padding-right: 50px
+
+	@media screen and (max-width: 1020px)
+		padding: 0
+		align-items: flex-end
+
+	@media screen and (max-width: 768px)
+		height: calc(100vh - 80px - 150px - 50px - 50px)
+
+	@media screen and (max-width: 520px)
+		padding: 0 25px
+
+	.text-container
+		display: flex
+		flex-direction: column
+		padding-top: 100px
+
+		@media screen and (max-width: 1020px)
+			height: 100%
+
+		@media screen and (max-width: 520px)
+			padding: 50px 0
+			width: 100%
+			justify-content: flex-start
+			align-items: center
+
+
+		h1
+			font-size: 36px
+			margin-bottom: 20px
+
+			@media screen and (max-width: 520px)
+				font-size: 32px
+
+		h3
+			font-size: 24px
+
+			@media screen and (max-width: 520px)
+				font-size: 20px
+
+	.image
+		height: 100%
+
+		@media screen and (max-width: 1020px)
+			height: 80%
+
+		@media screen and (max-width: 768px)
+			display: none
+
+	.wave
+		position: fixed
+		bottom: -50px
+		right: 0
+		width: 100%
+
+		@media screen and (max-width: 1480px)
+			bottom: 0
+
+		@media screen and (max-width: 1020px)
+			bottom: 0
+
+		@media screen and (max-width: 768px)
+			bottom: 0

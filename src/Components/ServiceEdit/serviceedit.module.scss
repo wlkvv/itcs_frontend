@@ -1,0 +1,97 @@
+@import "/home/student/labs_4/front_final/src/Styles/variables.sass";
+
+.edit-form {
+  // display: flex;
+  // justify-content: space-between;
+  // gap: 40px;
+  //   width: 500px;
+  //   margin: 0 auto;
+  //   background-color: $brand-color;
+  &__block {
+    display: flex;
+    gap: 40px;
+    // width: 70%;
+    justify-content: space-between;
+    // flex-direction: column;
+    &_text {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+      text-align: left;
+    }
+
+    &_submit {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    &_input-title {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &_input {
+      border-radius: 5px;
+      border: 1px solid $brand-color;
+      height: 50px;
+      text-align: left;
+      box-sizing: border-box;
+      padding-left: 10px;
+      width: 100%;
+
+      font-size: 20px;
+
+      &:focus {
+        border: 2px solid $brand-color;
+      }
+    }
+  }
+}
+
+.droparea {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  &_input {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.statusButtons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.statusButton {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:hover {
+    background-color: #eaeaea;
+    border-color: #ccc;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+}
+
+.statusButton.active {
+  background-color: #007bff;
+  color: white;
+}

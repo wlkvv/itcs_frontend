@@ -1,0 +1,12 @@
+@import "/home/student/labs_4/front_final/src/Styles/variables.sass";
+
+.dropdown {
+  &__toggle {
+    background-color: $brand-color;
+    border: 1px solid $brand-color;
+
+    &:hover {
+      background-color: rgb(178, 178, 178);
+    }
+  }
+}
